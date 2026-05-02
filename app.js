@@ -88,7 +88,7 @@ async function init() {
   if (typeof TMDB_API_KEY === "undefined" || !TMDB_API_KEY) {
     setStatus(
       status,
-      "config.js에 TMDB_API_KEY가 설정되어 있는지 확인하세요.",
+      "API 키가 없습니다. 로컬: config.example.js를 복사해 config.js로 저장한 뒤 키를 넣으세요. Vercel: Project → Settings → Environment Variables에 TMDB_API_KEY 추가 후 Redeploy. GitHub Pages: Actions 시크릿 TMDB_API_KEY, Pages 소스는 GitHub Actions.",
       true
     );
     return;
