@@ -1,3 +1,4 @@
-config.js
+# 루트에만 적용 (하위 폴더의 runtime-config.js는 배포에 포함되도록)
+/config.js
 api keydata.md
 .DS_Store
